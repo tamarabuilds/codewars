@@ -13,18 +13,21 @@ Define String.prototype.toAlternatingCase (or a similar function/method such as 
 "String.prototype.toAlternatingCase".toAlternatingCase() === "sTRING.PROTOTYPE.TOaLTERNATINGcASE"
 As usual, your function/method should be pure, i.e. it should not mutate the original string.
 */
-function toAlternatingCase(str){
-    let answer = ''
-    for( let i = 0; i < str.length; i++){
-        if( str[i].toUpperCase() === str[i]){
-            answer += str[i].toLowerCase()
-        } else if( str[i].toLowerCase() === str[i]){
-            answer += str[i].toUpperCase()
-        } else {
-            answer += str[i]
-        }
-    }
-    return answer
+function toAlternatingCase(str){                        // First solution
+    // let answer = ''
+    // for( let i = 0; i < str.length; i++){
+    //     if( str[i].toUpperCase() === str[i]){
+    //         answer += str[i].toLowerCase()
+    //     } else if( str[i].toLowerCase() === str[i]){
+    //         answer += str[i].toUpperCase()
+    //     } else {
+    //         answer += str[i]
+    //     }
+    // }
+    // return answer
+
+    return this.split('').map( (e) => e.toUpperCase()=== e ? e.toLowerCase() : e.toUpperCase()).join('')            // Learned solution
+
 }
 
 console.log(toAlternatingCase('hello world'))
