@@ -16,7 +16,7 @@ function well(x){
     // if (yesCount < 3) return 'Publish!'
     // return 'I smell a series!'
 
-    const yesCount = x.filter( n => n === 'good').length                    
+    const yesCount = x.filter( n => n === 'good').length                            // Learned solution
     return yesCount ? yesCount > 2 ? 'I smell a series!' : 'Publish' : 'Fail!'
 }
 
