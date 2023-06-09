@@ -52,7 +52,7 @@ Examples:(Input1, Input2 --> Output (explanation)))
 
 
 
-function addBinary(a,b){
+function addBinary(a,b){                            // Learned solution
     return (a+b).toString(2)
 }
 
