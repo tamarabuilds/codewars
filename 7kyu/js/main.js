@@ -1,68 +1,40 @@
-// https://www.codewars.com/kata/551f37452ff852b7bd000139
-// Binary Addition
+// https://www.codewars.com/kata/55fd2d567d94ac3bc9000064
+// Sum of odd numbers
 /*
-DESCRIPTION:
-Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+Given the triangle of consecutive odd numbers:
 
-The binary number returned should be a string.
+1,1                    1
+2,2                3     5
+3,4            7     9    11
+4,7        13    15    17    19
+5,11        21    23    25    27    29
+...
+Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.: (Input --> Output)
 
-Examples:(Input1, Input2 --> Output (explanation)))
-
-1, 1 --> "10" (1 + 1 = 2 in decimal or 10 in binary)
-5, 9 --> "1110" (5 + 9 = 14 in decimal or 1110 in binary)
+1 -->  1
+2 --> 3 + 5 = 8
 */
-// function addBinary(a,b){
-//     let sum = a+b                                               // First solution
-//     // console.log(sum)
-//     let output = []
-//     // https://stackoverflow.com/questions/4016213/whats-the-opposite-of-javascripts-math-pow
-//     const binaryLength = Math.floor(Math.log(sum) / Math.log(2))
-//     // console.log(binaryLength)
-//     output = Array.from({length: binaryLength + 1}, (e, i) => i = 0  )
-//     output[binaryLength] = 1
-//     sum -= Math.pow(2, binaryLength)
-//     for (let i = binaryLength; i >= 0 ; i--){
-//         if (sum >= Math.pow(2, i)){
-//             output[i] = 1
-//             sum -= Math.pow(2, i)
-//         }
-//     }
 
-//     return output.reverse().join('')
-// }
-
-
-// function addBinary(a,b){                            // Second try. Didn't work. Right shift doesn't support bigInt values
-//     // console.log(a, b)
-//     let sum = a+b
-//     let output = []
-//     console.log( typeof sum)
-//     while (sum > 0){
-//         console.log(`sum is: ${sum}`)
-//         if(sum & 1 ) {
-//             output.push(1)
-//         } else {
-//             output.push(0)
-//         }
-//         sum = sum >>> 1
-//     }
+function rowSumOddNumbers(n){
+    let start = 1
+    for (let j = start; j < n; j++){
+        start = j + 2
+        console.log(start)
+    }
+    let row = 0
+    // console.log(start)
+    for (let i = 0; i < n ; i++){
+        // console.log(start + (i * 2))
+        row += start + (i * 2)
+    }    
     
-//     return output.reverse().join('')
-// }
-
-
-
-function addBinary(a,b){
-    return (a+b).toString(2)
+    return `final: ${row}`
 }
 
 
 
-console.log(addBinary(1,1))
-console.log(addBinary(5,9))
-console.log(addBinary(1,2))
-console.log(addBinary(153871448667597, 335635611645010)) /// 1101111010011010000111110011100011110101000011111
-console.log('1101111010011010000111110011100011110101000011111')
-
-
-
+console.log(rowSumOddNumbers(1))        //  1
+console.log(rowSumOddNumbers(2))        // 8
+console.log(rowSumOddNumbers(3))        // 27
+// console.log(rowSumOddNumbers(42))       // 74088
+// console.log(rowSumOddNumbers(1))        // 1
