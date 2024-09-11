@@ -22,8 +22,16 @@ console.log("main.js loaded");
 
 
 
+/////////////////////// Sum The Strings
+/*
+function sumStr(a,b) {
+  const first = a ? parseInt(a) : 0
+  const second = b ? parseInt(b) : 0
+  return (first + second ).toString()
+}
 
-
+console.log(sumStr('4', '5'), '9')
+*/
 
 //////////////////////// What is between?
 /*
