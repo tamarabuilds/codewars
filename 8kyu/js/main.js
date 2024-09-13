@@ -14,8 +14,31 @@ console.log("main.js loaded");
 
 
 
+////////////////////////////Remove String Spaces
+/*
+Write a function that removes the spaces from the string, then return the resultant string.
 
 
+*/
+/*
+function noSpace(x){
+  let answer = ''
+  // loop through, if space skip, otherwise print out
+  for(let i=0; i < x.length; i++){
+    if(x[i] === ' ') {} else {
+      
+      answer = answer + x[i] 
+    }
+  }
+  return answer
+
+  // turn into array, split on space, then join
+  // return x.split(' ').join('')
+}
+
+console.log(noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"), "8j8mBliB8gimjB8B8jlB")
+console.log(noSpace("8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd"), "88Bifk8hB8BB8BBBB888chl8BhBfd")
+*/
 
 //////////////////////Find the smallest integer in the array
 /*
@@ -23,16 +46,16 @@ Given an array of integers your solution should find the smallest integer.
 
 
 */
+/*
 function findSmallestInt(arr) {
   // min
-
   return Math.min(...arr)
 }
 
 console.log(findSmallestInt([34, 15, 88, 2]), 2)
 console.log(findSmallestInt([78,56,232,12,18]), 12)
 console.log(findSmallestInt([78,56,232,12,0]), 0)
-
+*/
 ///////////Grasshopper - Summation
 /*
 Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests.
