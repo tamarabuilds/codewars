@@ -17,8 +17,21 @@ console.log("main.js loaded");
 
 
 
+//////////////////////Find the smallest integer in the array
+/*
+Given an array of integers your solution should find the smallest integer.
 
 
+*/
+function findSmallestInt(arr) {
+  // min
+
+  return Math.min(...arr)
+}
+
+console.log(findSmallestInt([34, 15, 88, 2]), 2)
+console.log(findSmallestInt([78,56,232,12,18]), 12)
+console.log(findSmallestInt([78,56,232,12,0]), 0)
 
 ///////////Grasshopper - Summation
 /*
