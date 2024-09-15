@@ -8,13 +8,36 @@ console.log("main.js loaded");
 
 // https://www.codewars.com/kata/search/my-languages?q=&r%5B%5D=-8&tags=Fundamentals&beta=false&order_by=satisfaction_percent%20desc%2Ctotal_completed%20desc
 
-/////////////// LAST: page 1:Remove First and Last Character
+/////////////// LAST: page 1:
 
 
 
 
 
 
+
+
+
+
+
+///////////Grasshopper - Summation
+/*
+Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests.
+*/
+/*
+var summation = function (num) {
+  // for loop
+  let result = 0;
+  for (let i = 1; i <= num; i++){
+    result = result + i;
+  }
+  return result
+}
+
+console.log(summation(1), 1)
+console.log(summation(2), 3)
+console.log(summation(8), 36)
+*/
 
 
 
