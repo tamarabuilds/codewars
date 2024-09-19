@@ -6,6 +6,65 @@ console.log("main.js loaded");
 // EXAMPLES
 // PSEUDOCODE
 
+// https://www.codewars.com/kata/search/my-languages?q=&r%5B%5D=-8&tags=Fundamentals&beta=false&order_by=satisfaction_percent%20desc%2Ctotal_completed%20desc
+
+/////////////// LAST: page 1: reversed strings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//https://www.codewars.com/kata/5168bb5dfe9a00b126000018
+
+/*
+Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+*/
+
+// PREP
+// Parameters: string
+// Return: string
+// Examples: 
+// Pseudocode:
+
+/*
+function solution(str){
+  // turn into array
+  const arr = str.split('')
+  // reverse
+  const reverse = arr.reverse()
+  // stringify again
+  const reversedString = reverse.join('')
+  
+  return reversedString
+}
+
+
+console.log(solution('world'), 'dlrow')
+console.log(solution('hello'), 'olleh')
+console.log(solution(''), '')
+console.log(solution('h'), 'h')
+
+*/
+
+
+
+
 // https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript
 /*
 You get an array of numbers, return the sum of all of the positives ones.
@@ -30,6 +89,10 @@ function positiveSum(arr) {
     }
   });
   return sum;
+}
+
+function positiveSum2(arr) {
+  return arr.reduce((a,b) => a + (b > 0? b : 0), 0)
 }
 
 console.log(positiveSum([1, 2, 3, 4, 5]), 15);
