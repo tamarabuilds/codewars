@@ -8,7 +8,7 @@ console.log("main.js loaded");
 
 // https://www.codewars.com/kata/search/my-languages?q=&r%5B%5D=-8&tags=Fundamentals&beta=false&order_by=satisfaction_percent%20desc%2Ctotal_completed%20desc
 
-/////////////// LAST: page 1: reversed strings
+/////////////// LAST: page 1:Remove First and Last Character
 
 
 
@@ -25,7 +25,84 @@ console.log("main.js loaded");
 
 
 
+//Remove First and Last Character
+/*
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry about strings with less than two characters.
+*/
+/*
+function removeChar(str) {
+  let arr = str.split('')
+  //remove first char
+  arr.splice(0, 1)
+  // remove last char
+  arr.splice((arr.length-1), 1)
+  return arr.join('')
+}
 
+console.log(removeChar("eloquent"), "loquen");
+console.log(removeChar("country"), "ountr");
+console.log(removeChar("person"), "erso");
+
+
+function removeChar2(str) {
+  return str.slice(1, -1)
+}
+
+console.log(removeChar2("eloquent"), "loquen");
+console.log(removeChar2("country"), "ountr");
+console.log(removeChar2("person"), "erso");
+
+*/
+
+//  Opposite number
+/*
+function opposite(number) {
+  //your code here
+  return -number
+}
+*/
+
+/*
+// Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord( bool ){
+  return bool ? "Yes" : "No"
+}
+
+console.log(boolToWord(true), 'Yes')
+console.log(boolToWord(false), 'No')
+
+*/
+
+// https://www.codewars.com/kata/5265326f5fda8eb1160004c8/train/javascript
+/*
+Convert a Number to a String!
+We need a function that can transform a number (integer) into a string.
+
+What ways of achieving this do you know?
+
+Examples (input --> output):
+123  --> "123"
+999  --> "999"
+-100 --> "-100"
+
+
+*/
+
+// PREP
+// Parameters: integer
+// Return: string
+// Examples:
+
+/*
+function numberToString(num) {
+  // convert num to string
+  return num.toString()
+}
+
+console.log(numberToString(123), '123')
+console.log(numberToString(999), '999')
+console.log(numberToString(-999), '-999')
+*/
 
 //https://www.codewars.com/kata/5168bb5dfe9a00b126000018
 
@@ -39,7 +116,7 @@ Complete the solution so that it reverses the string passed into it.
 // PREP
 // Parameters: string
 // Return: string
-// Examples: 
+// Examples:
 // Pseudocode:
 
 /*
@@ -61,9 +138,6 @@ console.log(solution(''), '')
 console.log(solution('h'), 'h')
 
 */
-
-
-
 
 // https://www.codewars.com/kata/5715eaedb436cf5606000381/train/javascript
 /*
