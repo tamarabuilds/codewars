@@ -15,11 +15,37 @@ console.log("main.js loaded");
 
 
 
+////////// Square(n) Sum
+/*
 
+Complete the square sum function so that it squares each number passed into it and then sums the results together.
+*/
 
+// PREP
+// Parameters: array of integers
+// RESULT: number
+// examples
 
+/*
 
+function squareSum(numbers){
+  // reduce each number in the array and add it all up
+  // return numbers.reduce((a,c) => a + (c * c), 0)
 
+  // map through each number and add it to the result
+  let result = 0;
+  numbers.map((n) => {
+    result = (n * n) + result
+  })
+  return result
+
+}
+
+console.log(squareSum([1,2]), 5)
+console.log(squareSum([0,3,4,5]), 50)
+console.log(squareSum([]), 0)
+
+*/
 
 
 
