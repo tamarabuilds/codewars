@@ -14,6 +14,61 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+
+
+
+////////////////////////Counting sheep...
+/*
+Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+For example,
+
+[true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]
+The correct answer would be 17.
+
+Hint: Don't forget to check for bad values like null/undefined
+*/
+
+function countSheeps(sheep) {
+  // reduce, add if true
+  // return sheep.reduce((a, c) => c ? a + c : a, 0)
+  /*
+  let answer = 0;
+  for (let i=0; i< sheep.length; i++){
+    if (sheep[i]){
+      answer++
+    }
+  }
+  return answer
+*/
+return sheep.filter(Boolean).length
+  // return Math.sum(...sheep.map((val) => +val)) // nope
+}
+
+console.log(countSheeps([]), 0)
+console.log(countSheeps([undefined]), 0)
+console.log(countSheeps([null]), 0)
+console.log(countSheeps([false]), 0)
+console.log(countSheeps([true]), 1)
+console.log(countSheeps([undefined,null,false,true]), 1)
+console.log(countSheeps([undefined,null,false,true,true,false,null,undefined]), 2)
+console.log(countSheeps([true,true,true,false,true,true,true,true,true,false,true,false,true,false,false,true,true,true,true,true,false,false,true,true]), 17)
+
+
+
+
 ////////////////////////////Remove String Spaces
 /*
 Write a function that removes the spaces from the string, then return the resultant string.
