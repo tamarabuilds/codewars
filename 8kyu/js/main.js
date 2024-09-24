@@ -18,10 +18,43 @@ console.log("main.js loaded");
 
 
 
+//////////////////// Basic Mathematical Operations
+/*
+Your task is to create a function that does four basic mathematical operations.
 
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return result of numbers after applying the chosen operation.
 
+Examples(Operator, value1, value2) --> output
+*/
+/*
+function basicOp(operation, value1, value2){
+  // switch (operation){
+  //   case "+":
+  //     return value1 + value2;
+  //   case '-':
+  //     return value1 - value2;
+  //   case '*':
+  //     return value1 * value2;
+  //   case '/':
+  //     return value1 / value2;
+  // }
+  // return 0;
 
+  const cases = {
+    '+': value1 + value2,
+    '-': value1 - value2,
+    '*': value1 * value2,
+    '/': value1 / value2,
+  }
+  return cases[operation]
+}
 
+console.log(basicOp("+", 4, 7), 11)
+console.log(basicOp("-", 15, 18), -3)
+console.log(basicOp("*", 5, 5), 25)
+console.log(basicOp("/", 49, 7), 7)
+*/
 
 
 ////////////////////////Counting sheep...
@@ -41,22 +74,22 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 */
 
-function countSheeps(sheep) {
-  // reduce, add if true
-  // return sheep.reduce((a, c) => c ? a + c : a, 0)
-  /*
-  let answer = 0;
-  for (let i=0; i< sheep.length; i++){
-    if (sheep[i]){
-      answer++
-    }
-  }
-  return answer
-*/
-return sheep.filter(Boolean).length
-  // return Math.sum(...sheep.map((val) => +val)) // nope
-}
-
+// function countSheeps(sheep) {
+//   // reduce, add if true
+//   // return sheep.reduce((a, c) => c ? a + c : a, 0)
+//   /*
+//   let answer = 0;
+//   for (let i=0; i< sheep.length; i++){
+//     if (sheep[i]){
+//       answer++
+//     }
+//   }
+//   return answer
+// */
+// return sheep.filter(Boolean).length
+//   // return Math.sum(...sheep.map((val) => +val)) // nope
+// }
+/*
 console.log(countSheeps([]), 0)
 console.log(countSheeps([undefined]), 0)
 console.log(countSheeps([null]), 0)
@@ -67,7 +100,7 @@ console.log(countSheeps([undefined,null,false,true,true,false,null,undefined]), 
 console.log(countSheeps([true,true,true,false,true,true,true,true,true,false,true,false,true,false,false,true,true,true,true,true,false,false,true,true]), 17)
 
 
-
+*/
 
 ////////////////////////////Remove String Spaces
 /*
