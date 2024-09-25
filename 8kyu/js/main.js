@@ -15,8 +15,16 @@ console.log("main.js loaded");
 
 
 
+//////////////////////////////Convert a String to a Number!
 
+/*
+const stringToNumber = function(str){
+  // return +str;
+  // return Number(str);
+}
 
+console.log(stringToNumber('1234'), 1234)
+*/
 
 //////////////////// Basic Mathematical Operations
 /*
