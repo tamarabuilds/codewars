@@ -20,6 +20,48 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+
+
+
+//////////////////// Century From Year
+/*
+The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+
+Task
+Given a year, return the century it is in.
+
+Examples
+1705 --> 18
+1900 --> 19
+1601 --> 17
+2000 --> 20
+2742 --> 28
+*/
+/*
+function century(year) {
+  // // if less than 101, return 1
+  // if (year < 101) return 1
+  // // get first 2 digits, if there's a modulus, round up
+  // let answer = year/100
+  // if (year % 100 > 0) return Math.floor(answer) + 1
+  // return answer;
+  return Math.ceil(year/100)
+}
+
+console.log(century(1705), 18)
+console.log(century(1900), 19)
+console.log(century(1601), 17)
+console.log(century(2000), 20)
+console.log(century(89), 1)
+*/
+
 /////////////////////////Abbreviate a Two Word Name
 /*
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
