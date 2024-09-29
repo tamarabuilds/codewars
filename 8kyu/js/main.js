@@ -43,8 +43,9 @@ time = 6.7---> litres = 3
 time = 11.8--> litres = 5
 */
 
+/*
 function litres(time) {
-  return 0;
+  return Math.floor(time / 2);
 }
 
 console.log(litres(2), 1)
@@ -54,7 +55,7 @@ console.log(litres(0.82), 0)
 console.log(litres(11.8), 5)
 console.log(litres(1787), 893)
 console.log(litres(0), 0)
-
+*/
 
 
 
