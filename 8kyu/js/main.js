@@ -25,6 +25,36 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+////////////////////// Convert number to reversed array of digits
+/*
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+Example(Input => Output):
+35231 => [1,3,2,5,3]
+0 => [0]
+*/
+/*
+function digitize(n) {
+  // turn into string and reverse, then turn into array
+  // return n.toString().split('').reverse().map(n => Number(n))
+  const array = n.toString().split('')
+  const reversed = array.reverse()
+  const final = reversed.map(n => Number(n))
+  return final
+}
+
+console.log(digitize(35231), [1,3,2,5,3])
+console.log(digitize(0), [0])
+*/
+
+
 ///////////////Keep Hydrated!
 
 /*
