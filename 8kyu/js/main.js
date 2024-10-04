@@ -19,6 +19,44 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////// Beginner Series #1 School Paperwork
+/*
+Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+
+Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+
+Example:
+n= 5, m=5: 25
+n=-5, m=5:  0
+*/
+/*
+
+function paperwork(n, m) {
+  if (n < 1 || m < 1 ) return 0
+  return n * m
+}
+
+console.log(paperwork(5,5), 25)
+console.log(paperwork(5,-5), 0)
+console.log(paperwork(-5,-5), 0)
+console.log(paperwork(-5,5), 0)
+console.log(paperwork(5,0), 0)
+*/
+
+
+
 //////////////// Beginner - Lost Without a Map
 /*
 Given an array of integers, return a new array with each value doubled.
