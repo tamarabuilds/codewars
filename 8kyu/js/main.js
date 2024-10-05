@@ -28,8 +28,17 @@ console.log("main.js loaded");
 
 
 
+////////////////////////  Convert a Boolean to a String
+/*
+function booleanToString(b){
+  //your code here
+  // return b ? "true" : "false"
+  return b.toString()
+}
 
-
+console.log(booleanToString(true), "true")
+console.log(booleanToString(false), "false")
+*/
 
 //////////////////// Beginner Series #1 School Paperwork
 /*
