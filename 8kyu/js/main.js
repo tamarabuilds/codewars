@@ -28,6 +28,73 @@ console.log("main.js loaded");
 
 
 
+
+//////// Sum Arrays
+/*
+Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+Examples
+Input: [1, 5.2, 4, 0, -1]
+Output: 9.2
+
+Input: []
+Output: 0
+
+Input: [-2.398]
+Output: -2.398
+
+Assumptions
+You can assume that you are only given numbers.
+You cannot assume the size of the array.
+You can assume that you do get an array and if the array is empty, return 0.
+What We're Testing
+We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
+Advanced users may find this extremely easy and can easily write this in one line.
+*/
+
+/*
+// Sum Numbers
+function sum (numbers) {
+  "use strict";
+  
+  return numbers.reduce( (acc, num) => acc + num, 0)
+};
+
+console.log(sum([]), 0)
+console.log(sum([1, 5.2, 4, 0, -1]), 9.2)
+
+*/
+
+
+
+////////////////////// Are You Playing Banjo?
+
+/*
+Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
+
+The function takes a name as its only argument, and returns one of the following strings:
+
+name + " plays banjo" 
+name + " does not play banjo"
+Names given are always valid strings.
+*/
+
+/*
+function areYouPlayingBanjo(name) {
+  if (name[0].toLowerCase() === "r") {
+    return `${name} plays banjo`
+  }
+  return `${name} does not play banjo`
+}
+
+console.log(areYouPlayingBanjo("Adam"), "Adam does not play banjo")
+console.log(areYouPlayingBanjo("bravo"), "bravo does not play banjo")
+console.log(areYouPlayingBanjo("Ringo"), "Ringo plays banjo")
+console.log(areYouPlayingBanjo("rolf"), "rolf plays banjo")
+*/
+
+
 ////////////////////////  Convert a Boolean to a String
 /*
 function booleanToString(b){
