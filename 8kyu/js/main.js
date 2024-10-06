@@ -23,9 +23,19 @@ console.log("main.js loaded");
 
 
 
+///////////////////// Calculate average
+/*
+function findAverage(array) {
+  if (array.length < 1) return 0
+  return (array.reduce((acc, num) => acc + num, 0)) / (array.length);
+}
 
+console.log(findAverage([1,1,1]), 1)
+console.log(findAverage([1,2,3]), 2)
+console.log(findAverage([1,2,3,4]), 2.5)
+console.log(findAverage([]), 0)
 
-
+*/
 
 
 /////////////////////// How good are you really?
