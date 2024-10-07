@@ -19,8 +19,61 @@ console.log("main.js loaded");
 
 
 
+/////////////////// Count of positives / sum of negatives
 
+/*
+Given an array of integers.
 
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
+
+Example
+For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+*/
+/*
+
+function countPositivesSumNegatives(input) {
+  if (!input || input.length < 1 ) return []
+  let positive = 0;
+  let negative = 0;
+  input.forEach(n => {
+    if (n > 0) { positive += 1 }
+    if (n < 0) { negative += n }
+  })
+  return [positive, negative]
+}
+
+console.log(countPositivesSumNegatives( [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]), [10,-65])
+console.log(countPositivesSumNegatives( [0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]), [8,-50])
+*/
+
+//////////////////// Simple multiplication
+/*
+function simpleMultiplication(number) {
+  if (number % 2 === 0) return number * 8
+  return number * 9
+}
+
+console.log(simpleMultiplication(2), 16)
+console.log(simpleMultiplication(1), 9)
+console.log(simpleMultiplication(8), 64)
+console.log(simpleMultiplication(5), 45)
+*/
+
+/////////////////// Invert values
+
+/*
+function invert(array) {
+  return array.map((n) => -n);
+}
+
+console.log(invert([1,2,3,4,5]), [-1,-2,-3,-4,-5])
+console.log(invert([1,-2,3,-4,5]), [-1,2,-3,4,-5])
+console.log(invert([]), [])
+console.log(invert([0]), [0])
+
+*/
 
 
 ///////////////////// Calculate average
