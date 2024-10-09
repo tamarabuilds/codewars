@@ -18,8 +18,12 @@ console.log("main.js loaded");
 
 
 
-
-
+//////////////////////Sentence Smash
+/*
+function smash (words) {
+  return words.join(' ')
+};
+*/
 
 ////////////////////////// You only need one - Beginner
 /*
