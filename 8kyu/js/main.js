@@ -18,6 +18,14 @@ console.log("main.js loaded");
 
 
 
+////////////////////////////Is he gonna survive?
+
+function hero(bullets, dragons){
+  return bullets / 2 >= dragons;
+  }
+
+  console.log(hero(10, 5), true)
+  console.log(hero(7, 4), false)
 
 
 /////////////////////// Reversed sequence
