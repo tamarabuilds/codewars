@@ -20,17 +20,29 @@ console.log("main.js loaded");
 
 
 
+/////////////////////// Reversed sequence
+/*
+const reverseSeq = n => {
+  // let arr = [n]
+  // for (let i = n-1; i > 0; i--){
+  //   arr.push(i)
+  // }
+  // return arr
+  return Array(n).fill(0).map( (e,i) => n - i)
+};
 
-
+console.log(reverseSeq(5), [5, 4, 3, 2, 1])
+*/
 
 ////////////////////// Beginner - Reduce but Grow
-
+/*
 function grow(x) {
   return x.reduce( (acc, c) => acc * c, 1)
 }
 
 console.log(grow([1, 2, 3]), 6)
 console.log(grow([4, 1, 1, 1, 4]), 16)
+*/
 
 //////////////////// Calculate BMI
 /*
