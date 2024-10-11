@@ -16,6 +16,46 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////// Count by X
+/*
+Create a function with two arguments that will return an array of the first n multiples of x.
+
+Assume both the given number and the number of times to count will be positive numbers greater than 0.
+
+Return the results as an array or list ( depending on language ).
+
+Examples
+countBy(1,10) === [1,2,3,4,5,6,7,8,9,10]
+countBy(2,5) === [2,4,6,8,10]
+*/
+
+/*
+function countBy(x, n) {
+  let z = Array(n).fill(x).map((e, i) => e * (i+1), 1);
+  
+
+  return z;
+}
+
+console.log(countBy(1,10), [1,2,3,4,5,6,7,8,9,10])
+console.log(countBy(2,5), [2,4,6,8,10])
+*/
+
 /////////////////////// Will you make it?
 /*
 You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
