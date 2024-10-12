@@ -8,7 +8,7 @@ console.log("main.js loaded");
 
 // https://www.codewars.com/kata/search/my-languages?q=&r%5B%5D=-8&tags=Fundamentals&beta=false&order_by=satisfaction_percent%20desc%2Ctotal_completed%20desc
 
-/////////////// 
+///////////////
 
 
 
@@ -30,6 +30,81 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+
+
+
+////////////////////////Rock Paper Scissors!
+
+const rps = (p1, p2) => {
+  if( p1 === p2) return "Draw!"
+  if (p1 === "rock") {
+    switch (p2) {
+      case "paper":
+        return "Player 2 won!";
+      case "scissors":
+        return "Player 1 won!";
+    }
+  }
+  if (p1 === "paper") {
+    switch (p2) {
+      case "rock":
+        return "Player 1 won!";
+      case "scissors":
+        return "Player 2 won!";
+    }
+  }
+  if (p1 === "scissors") {
+    switch (p2) {
+      case "rock":
+        return "Player 2 won!";
+      case "paper":
+        return "Player 1 won!";
+    }
+  }
+};
+
+console.log(rps("rock", "scissors"), "Player 1 won!");
+console.log(rps("scissors", "paper"), "Player 1 won!");
+console.log(rps("paper", "rock"), "Player 1 won!");
+
+console.log(rps("scissors", "rock"), "Player 2 won!");
+console.log(rps("paper", "scissors"), "Player 2 won!");
+console.log(rps("rock", "paper"), "Player 2 won!");
+
+console.log(rps("rock", "rock"), "Draw!");
+console.log(rps("paper", "paper"), "Draw!");
+console.log(rps("scissors", "scissors"), "Draw!");
+
+////////////////////////If you can't sleep, just count sheep!!
+/*
+var countSheep = function (num){
+  //your code here
+  let message = ''
+  for (let i = 1; i <= num; i++){
+    message += `${i} sheep...`
+  }
+  return message
+}
+
+console.log(countSheep(0), "")
+console.log(countSheep(1), "1 sheep...")
+console.log(countSheep(2), "1 sheep...2 sheep...")
+*/
+
+//////////////////////You Can't Code Under Pressure #1
+/*
+function doubleInteger(i) {
+  // i will be an integer. Double it and return it.
+  return i * 2;
+}
+*/
 
 ///////////// Count by X
 /*
@@ -190,9 +265,6 @@ console.log(check(['what', 'a', 'great', 'kata'], 'kat'), false)
 
 */
 
-
-
-
 //////////////////////// Fake Binary
 /*
 
@@ -279,7 +351,6 @@ console.log(invert([0]), [0])
 
 */
 
-
 ///////////////////// Calculate average
 /*
 function findAverage(array) {
@@ -294,7 +365,6 @@ console.log(findAverage([]), 0)
 
 */
 
-
 /////////////////////// How good are you really?
 /*There was a test in your class and you passed it. Congratulations!
 
@@ -308,7 +378,6 @@ Note:
 Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
 
 */
-
 
 /*
 function betterThanAverage(classPoints, yourPoints) {
@@ -325,7 +394,6 @@ console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9), false)
 console.log(betterThanAverage([41, 75, 72, 56, 80, 82, 81, 33], 50), false)
 
 */
-
 
 ///////////////////// Beginner Series #2 Clock
 
@@ -361,7 +429,6 @@ console.log(past(0,0,0), 0)
 console.log(past(1, 0, 1), 3601000)
 console.log(past(1, 0, 0), 3600000)
 */
-
 
 //////// Sum Arrays
 /*
@@ -399,8 +466,6 @@ console.log(sum([1, 5.2, 4, 0, -1]), 9.2)
 
 */
 
-
-
 ////////////////////// Are You Playing Banjo?
 
 /*
@@ -427,7 +492,6 @@ console.log(areYouPlayingBanjo("bravo"), "bravo does not play banjo")
 console.log(areYouPlayingBanjo("Ringo"), "Ringo plays banjo")
 console.log(areYouPlayingBanjo("rolf"), "rolf plays banjo")
 */
-
 
 ////////////////////////  Convert a Boolean to a String
 /*
@@ -464,8 +528,6 @@ console.log(paperwork(-5,-5), 0)
 console.log(paperwork(-5,5), 0)
 console.log(paperwork(5,0), 0)
 */
-
-
 
 //////////////// Beginner - Lost Without a Map
 /*
@@ -518,7 +580,6 @@ console.log(findNeedle(haystack_2), "found the needle at position 5")
 console.log(findNeedle(haystack_3), "found the needle at position 30")
 */
 
-
 //////////////////// Function 1 - hello world
 /*
 function greet() {
@@ -545,8 +606,6 @@ console.log(lovefunc(2,2), false)
 console.log(lovefunc(0,1), true)
 console.log(lovefunc(0,0), false)
 */
-
-
 
 //////////////////// Returning Strings
 /*
@@ -580,7 +639,6 @@ console.log(digitize(35231), [1,3,2,5,3])
 console.log(digitize(0), [0])
 */
 
-
 ///////////////Keep Hydrated!
 
 /*
@@ -612,10 +670,6 @@ console.log(litres(11.8), 5)
 console.log(litres(1787), 893)
 console.log(litres(0), 0)
 */
-
-
-
-
 
 //////////////////// Century From Year
 /*
@@ -673,8 +727,6 @@ console.log(abbrevName("Sam Harris"), "S.H")
 console.log(abbrevName("P Favuzzi"), "P.F")
 */
 
-
-
 //////////////////////////////Convert a String to a Number!
 
 /*
@@ -723,7 +775,6 @@ console.log(basicOp("-", 15, 18), -3)
 console.log(basicOp("*", 5, 5), 25)
 console.log(basicOp("/", 49, 7), 7)
 */
-
 
 ////////////////////////Counting sheep...
 /*
@@ -831,8 +882,6 @@ console.log(summation(2), 3)
 console.log(summation(8), 36)
 */
 
-
-
 ///// String repeat
 //Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
 /*
@@ -851,7 +900,6 @@ console.log(repeatStr(5, "#"), "#####")
 console.log(repeatStr(2, "ha "), "ha ha")
 
 */
-
 
 ////////// Square(n) Sum
 /*
@@ -884,10 +932,6 @@ console.log(squareSum([0,3,4,5]), 50)
 console.log(squareSum([]), 0)
 
 */
-
-
-
-
 
 //Remove First and Last Character
 /*
