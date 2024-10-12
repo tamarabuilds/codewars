@@ -37,11 +37,18 @@ console.log("main.js loaded");
 
 
 
+//////////////////////////Convert a string to an array
+/*
+function stringToArray(string){
 
+	// code code code
+  return string.split(' ')
 
+}
+*/
 
 ////////////////////////Rock Paper Scissors!
-
+/*
 const rps = (p1, p2) => {
   if( p1 === p2) return "Draw!"
   if (p1 === "rock") {
@@ -81,6 +88,8 @@ console.log(rps("rock", "paper"), "Player 2 won!");
 console.log(rps("rock", "rock"), "Draw!");
 console.log(rps("paper", "paper"), "Draw!");
 console.log(rps("scissors", "scissors"), "Draw!");
+
+*/
 
 ////////////////////////If you can't sleep, just count sheep!!
 /*
