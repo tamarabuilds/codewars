@@ -28,12 +28,89 @@ console.log("main.js loaded");
 
 
 
+/////////////////////////// Array plus array
+
+
+/*
+
+function arrayPlusArray(arr1, arr2) {
+  return [...arr1, ...arr2].reduce((acc, col) => acc + col, 0)
+}
+
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]), 21)
+*/
+
+
+////////////////Total amount of points
+/*
+Our football team has finished the championship.
+
+Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.
+
+For example: ["3:1", "2:2", "0:1", ...]
+
+Points are awarded for each match as follows:
+
+if x > y: 3 points (win)
+if x < y: 0 points (loss)
+if x = y: 1 point (tie)
+We need to write a function that takes this collection and returns the number of points our team (x) got in the championship by the rules given above.
+
+Notes:
+
+our team always plays 10 matches in the championship
+0 <= x <= 4
+0 <= y <= 4
+*/
+
+/*
+
+
+function points(games) {
+  let tracking = 0;
+  games.forEach((e) => {
+    const game = e.split(':')
+    if (game[0] > game[1]) tracking += 3
+    if (game[1] === game[0]) tracking += 1
+  } )
+  return tracking
+}
+
+console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]), 30)
+console.log(points(["1:1","2:2","3:3","4:4","2:2","3:3","4:4","3:3","4:4","4:4"]), 10)
+console.log(points(["0:1","0:2","0:3","0:4","1:2","1:3","1:4","2:3","2:4","3:4"]), 0)
+console.log(points(["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]), 15)
+console.log(points(["1:0","2:0","3:0","4:4","2:2","3:3","1:4","2:3","2:4","3:4"]), 12)
+
+*/
 
 
 
 
+////////////////////////////Find Maximum and Minimum Values of a List
+/*
+Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively.
 
+Examples (Input -> Output)
+* [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+* [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
+* [42, 54, 65, 87, 0]             -> min = 0, max = 87
+* [5]                             -> min = 5, max = 5
+Notes
+You may consider that there will not be any empty arrays/vectors.
+*/
 
+/*
+var min = function(list){
+    
+  return Math.min(...list);
+}
+
+var max = function(list){
+  
+  return Math.max(...list);
+}
+*/
 
 
 
