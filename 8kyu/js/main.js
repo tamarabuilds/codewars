@@ -23,7 +23,36 @@ console.log("main.js loaded");
 
 
 
+///////////////////Sum without highest and lowest number
+/*
+function sumArray(array) {
+  if (!array || array.length < 3) return 0
+  const sorted = array.sort((a, b) => a - b)
+  sorted.shift()
+  sorted.pop()
+  return sorted.reduce((a, c) => a  + c, 0)
+  
+  
+  // if (!array || array.length < 3) return 0
+  // const min = Math.min(...array)
+  // const max = Math.max(...array)
+  // const minLocation = array.indexOf(min)
+  // const maxLocation = array.indexOf(max)
 
+  // // const newArray = array.map(e => (e !== min && e !== max) ? e :  0)
+  // // return newArray.reduce((a, c) => a  + c, 0)
+  // return array.slice(minLocation)
+
+}
+*/
+// console.log(sumArray(null), 0)
+// console.log(sumArray([]), 0)
+// console.log(sumArray([3]), 0)
+// console.log(sumArray([3, 5]), 0)
+// console.log(sumArray([6, 2, 1, 8, 10]), 16)
+// console.log(sumArray([0, 1, 6, 10, 10]), 17)
+// console.log(sumArray([-6, -20, -1, -10, -12]), -28)
+// console.log(sumArray([-6, 20, -1, 10, -12]), 3)
 
 
 //////////////////////// Grasshopper - Grade book
