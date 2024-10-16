@@ -16,6 +16,35 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+////////////////////Transportation on vacation
+/*
+function rentalCarCost(d) {
+  // Your solution here
+  if ( d >= 7) return (d * 40) - 50
+  if ( d >= 3) return (d * 40) - 20
+  return d * 40
+
+}
+
+console.log(rentalCarCost(1), 40)
+console.log(rentalCarCost(3), 100)
+console.log(rentalCarCost(6), 220)
+console.log(rentalCarCost(7), 230)
+console.log(rentalCarCost(10), 350)
+*/
+
+
 ///////////////////// Sum Mixed Array
 /*
 function sumMix(x){
