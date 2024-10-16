@@ -16,12 +16,35 @@ console.log("main.js loaded");
 
 
 
+///////////////////// Sum Mixed Array
+/*
+function sumMix(x){
+  const nums = x.map( e => parseInt(e))
+  return nums.reduce( (a, c) => a + c, 0)
+}
+
+console.log(sumMix([9, 3, '7', '3']), 22)
+*/
 
 
+/////////////////////////// Grasshopper - Personalized Message
+/*
+function greet (name, owner) {
+  if (name === owner) return `Hello boss`;
+  return `Hello guest`
+}
+
+*/
 
 
+/////////////////////////Area or Perimeter
+/*
+const areaOrPerimeter = function(l , w) {
+  if (l === w) return l * w;
+  return (2 * l) + (2 * w) 
+};
 
-
+*/
 
 ///////////////////Sum without highest and lowest number
 /*
