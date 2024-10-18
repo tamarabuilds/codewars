@@ -24,13 +24,22 @@ console.log("main.js loaded");
 
 
 
+/////////////////////// Double Char
+/*
+function doubleChar(str) {
+  // Your code here
+  return str.split('').map( e => e.repeat(2)).join('')
+}
 
 
+console.log(doubleChar('abcd'), 'aabbccdd')
+console.log(doubleChar('Adidas'), 'AAddiiddaass')
 
+*/
 
 
 ///////////////////Quarter of the year
-
+/*
 const quarterOf = (month) => {
   // Your code here
   return Math.ceil(month/3)
@@ -41,7 +50,7 @@ console.log(quarterOf(8), 3)
 console.log(quarterOf(11), 4)
 console.log(quarterOf(4), 2)
 
-
+*/
 
 ////////////////////// The Feast of Many Beasts
 
