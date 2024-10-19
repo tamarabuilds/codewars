@@ -24,6 +24,29 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+//////////////////////Thinkful - Logic Drills: Traffic light
+
+function updateLight(current) {
+  
+  //your code here!
+  if(current === 'green') return "yellow"
+  if(current === 'yellow') return "red"
+  return 'green'
+
+}
+
+console.log(updateLight('green'), 'yellow')
+console.log(updateLight('yellow'), 'red')
+console.log(updateLight('red'), 'green')
+
+
 /////////////////////// Double Char
 /*
 function doubleChar(str) {
