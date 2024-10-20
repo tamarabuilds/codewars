@@ -28,11 +28,19 @@ console.log("main.js loaded");
 
 
 
+//////////////////////Count the Monkeys!
 
+
+function monkeyCount(n) {
+  // your code here
+  return Array(n).fill(1).map((e, i) => i + 1)
+  }
+
+console.log(monkeyCount(5), [1, 2, 3, 4, 5])
 
 
 //////////////////////Thinkful - Logic Drills: Traffic light
-
+/*
 function updateLight(current) {
   
   //your code here!
@@ -45,7 +53,7 @@ function updateLight(current) {
 console.log(updateLight('green'), 'yellow')
 console.log(updateLight('yellow'), 'red')
 console.log(updateLight('red'), 'green')
-
+*/
 
 /////////////////////// Double Char
 /*
