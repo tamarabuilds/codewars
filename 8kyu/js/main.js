@@ -24,6 +24,20 @@ console.log("main.js loaded");
 
 
 
+////////////////////////Removing Elements
+
+function removeEveryOther(arr){
+  //your code here
+  // let answer = []
+  // // return arr.map( (e, i) => i % 2 ? null : e)
+  // arr.map( (e, i) => i % 2 ? '' : answer.push(e))
+  // return answer
+  return arr.filter((e, i) => {return i % 2  === 0})
+}
+
+console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']), ['Hello', 'Hello Again'])
+
+
 
 
 /////////////////L1: Set Alarm
@@ -35,14 +49,14 @@ function setAlarm(employed, vacation){
 */
 //////////////////////Count the Monkeys!
 
-
+/*
 function monkeyCount(n) {
   // your code here
   return Array(n).fill(1).map((e, i) => i + 1)
   }
 
 console.log(monkeyCount(5), [1, 2, 3, 4, 5])
-
+*/
 
 //////////////////////Thinkful - Logic Drills: Traffic light
 /*
