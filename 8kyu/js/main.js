@@ -22,10 +22,15 @@ console.log("main.js loaded");
 
 
 
-
+////////////////////Third Angle of a Triangle
+/*
+function otherAngle(a, b) {
+  return 180-a-b;
+}
+*/
 
 ////////////////////////Removing Elements
-
+/*
 function removeEveryOther(arr){
   //your code here
   // let answer = []
@@ -36,7 +41,7 @@ function removeEveryOther(arr){
 }
 
 console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']), ['Hello', 'Hello Again'])
-
+*/
 
 
 
