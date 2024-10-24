@@ -22,7 +22,12 @@ console.log("main.js loaded");
 
 
 
+///////////////// Remove exclamation marks
+function removeExclamationMarks(s) {
+  return s.split('!').join('');
+}
 
+console.log(removeExclamationMarks("Hello World!"), "Hello World")
 
 
 
