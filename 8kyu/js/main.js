@@ -22,6 +22,29 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+////////////////////// The Feast of Many Beasts
+
+function feast(beast, dish) {
+  //your function here
+  const first = beast[0];
+  const last = beast[beast.length - 1];
+  return dish[0] === first && dish[dish.length - 1] === last
+}
+
+
+console.log(feast("great blue heron", "garlic naan"), true)
+console.log(feast("chickadee", "chocolate cake"), true)
+console.log(feast("brown bear", "bear claw"), false)
+
+
+
+
 ///////////////// Remove exclamation marks
 function removeExclamationMarks(s) {
   return s.split('!').join('');
