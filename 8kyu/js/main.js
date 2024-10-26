@@ -16,7 +16,16 @@ console.log("main.js loaded");
 
 
 
+////////////////////////Beginner Series #4 Cockroach
 
+/*
+function cockroachSpeed(s) {
+  //Good Luck!
+  return Math.floor(s * (1000 * 100)/(60 * 60))
+  
+}
+
+*/
 
 
 ///////////////////Will there be enough space?
