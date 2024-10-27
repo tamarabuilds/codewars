@@ -28,8 +28,24 @@ console.log("main.js loaded");
 
 
 
+
+///////////////////Quarter of the year
+
+const quarterOf = (month) => {
+  // Your code here
+  return Math.ceil(month/3)
+}
+
+console.log(quarterOf(3), 1)
+console.log(quarterOf(8), 3)
+console.log(quarterOf(11), 4)
+console.log(quarterOf(4), 2)
+
+
+
 ////////////////////// The Feast of Many Beasts
 
+/*
 function feast(beast, dish) {
   //your function here
   const first = beast[0];
@@ -41,17 +57,18 @@ function feast(beast, dish) {
 console.log(feast("great blue heron", "garlic naan"), true)
 console.log(feast("chickadee", "chocolate cake"), true)
 console.log(feast("brown bear", "bear claw"), false)
-
+*/
 
 
 
 ///////////////// Remove exclamation marks
+/*
 function removeExclamationMarks(s) {
   return s.split('!').join('');
 }
 
 console.log(removeExclamationMarks("Hello World!"), "Hello World")
-
+*/
 
 
 
