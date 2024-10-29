@@ -32,7 +32,10 @@ console.log("main.js loaded");
 
 
 
-
+///////////////////////////Grasshopper - Check for factor
+function checkForFactor (base, factor) {
+  return base % factor === 0;
+}
 
 
 ///////////////////////////////Keep up the hoop
