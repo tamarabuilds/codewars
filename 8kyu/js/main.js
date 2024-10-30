@@ -29,6 +29,27 @@ console.log("main.js loaded");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////Twice as old
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+  return Math.abs( dadYearsOld - (2 * sonYearsOld))
+}
+
+
 ////////////////////////All Star Code Challenge #18
 /*
 function strCount(str, letter){  
