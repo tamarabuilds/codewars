@@ -40,15 +40,32 @@ console.log("main.js loaded");
 
 
 
+////////////////////////////Find the first non-consecutive number
+/*
+function firstNonConsecutive (arr) {
+  let hold = arr[0]
+  for (let i = 1; i < arr.length; i++) {
+    if (hold + 1 === arr[i] ) {
+      hold = arr[i]
+    } else {
+      return arr[i]
+    }
+  }
 
+  return null
+}
 
+console.log(firstNonConsecutive([1,2,3,4,6,7,8]), 6)
+console.log(firstNonConsecutive([1,2,3,4]), null)
+*/
 
 /////////////////////////Twice as old
+/*
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   // your code here
   return Math.abs( dadYearsOld - (2 * sonYearsOld))
 }
-
+*/
 
 ////////////////////////All Star Code Challenge #18
 /*
