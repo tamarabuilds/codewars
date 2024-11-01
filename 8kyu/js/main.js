@@ -37,7 +37,16 @@ console.log("main.js loaded");
 
 
 
+//////////////////////////Parse nice int from char problem
+/*
+function getAge(inputString){
+  // return the girl's correct age as an integer. Happy coding :) 
+    return Number(inputString[0])
+  }
 
+console.log(getAge('4 years old'), 4)
+
+*/
 
 
 ////////////////////////////Find the first non-consecutive number
