@@ -29,13 +29,32 @@ console.log("main.js loaded");
 
 
 
+/////////////////////////// Correct the mistakes of the character recognition software
+/*
+function correct(string)
+{
+  return string.replaceAll('0', 'O').replaceAll('1', 'I').replaceAll('5', 'S')
+}
+
+console.log(correct('L0ND0N'), 'LONDON')
+console.log(correct('DUBL1N'), 'DUBLIN')
+console.log(correct('51NGAP0RE'), 'SINGAPORE')
+console.log(correct('BUDAPE5T'), 'BUDAPEST')
+console.log(correct('PAR15'), 'PARIS')
+*/
 
 
 
 
-
-
-
+////////////////////Volume of a Cuboid
+/*
+class Kata {
+  static getVolumeOfCuboid(length, width, height) {
+    // your code here
+    return length * width * height
+  }
+}
+*/
 
 //////////////////////////Parse nice int from char problem
 /*
