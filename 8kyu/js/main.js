@@ -10,14 +10,46 @@ console.log("main.js loaded");
 
 ///////////////
 
+///////////// Is it a palindrome?
+
+///////////// try to reverse and compare
+//////////// try to split and walk item by item
 
 
 
 
+/*
+function isPalindrome(x) {
+  // your code here
+  const lower = x.toLowerCase();
+  const isEven = lower.length % 2 === 0;
+  let head = lower.slice(0, lower.length / 2);
+  let tail = "";
+  if (isEven) {
+    tail = lower.slice(lower.length / 2);
+  }
+  if (!isEven) {
+    tail = lower.slice((lower.length / 2) + 1);
+  }
+  head = head.split('')
+  tail = tail.split('').reverse()
+  for (let i = 0 ; i < head.length; i ++) {
+    if (head[i] !== tail[i]) {
+      return false
+    }
+  }
+  return true
+}
 
-
-
-
+console.log(isPalindrome("a"), true);
+console.log(isPalindrome("aba"), true);
+console.log(isPalindrome("abba"), true);
+console.log(isPalindrome("hello"), false);
+console.log(isPalindrome("Madam"), true);
+console.log(isPalindrome(""), true);
+console.log(isPalindrome("pappy"), false);
+console.log(isPalindrome("AbBa"), true);
+*/
 
 
 //////////// Is it even?
@@ -82,9 +114,6 @@ console.log(correct('BUDAPE5T'), 'BUDAPEST')
 console.log(correct('PAR15'), 'PARIS')
 */
 
-
-
-
 ////////////////////Volume of a Cuboid
 /*
 class Kata {
@@ -105,7 +134,6 @@ function getAge(inputString){
 console.log(getAge('4 years old'), 4)
 
 */
-
 
 ////////////////////////////Find the first non-consecutive number
 /*
@@ -146,7 +174,6 @@ console.log(strCount('Hello', 'l'), 2)
 console.log(strCount('', 'z'), 0)
 */
 
-
 ///////////////////////////Grasshopper - Check for factor
 /*
 function checkForFactor (base, factor) {
@@ -171,7 +198,6 @@ function cockroachSpeed(s) {
 }
 
 */
-
 
 ///////////////////Will there be enough space?
 
@@ -208,8 +234,6 @@ function removeEveryOther(arr){
 
 console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']), ['Hello', 'Hello Again'])
 */
-
-
 
 /////////////////L1: Set Alarm
 /*
@@ -258,7 +282,6 @@ console.log(doubleChar('Adidas'), 'AAddiiddaass')
 
 */
 
-
 ///////////////////Quarter of the year
 /*
 const quarterOf = (month) => {
@@ -289,8 +312,6 @@ console.log(feast("chickadee", "chocolate cake"), true)
 console.log(feast("brown bear", "bear claw"), false)
 */
 
-
-
 ///////////////// Remove exclamation marks
 /*
 function removeExclamationMarks(s) {
@@ -299,8 +320,6 @@ function removeExclamationMarks(s) {
 
 console.log(removeExclamationMarks("Hello World!"), "Hello World")
 */
-
-
 
 ////////////////////Transportation on vacation
 /*
@@ -319,7 +338,6 @@ console.log(rentalCarCost(7), 230)
 console.log(rentalCarCost(10), 350)
 */
 
-
 ///////////////////// Sum Mixed Array
 /*
 function sumMix(x){
@@ -330,7 +348,6 @@ function sumMix(x){
 console.log(sumMix([9, 3, '7', '3']), 22)
 */
 
-
 /////////////////////////// Grasshopper - Personalized Message
 /*
 function greet (name, owner) {
@@ -339,7 +356,6 @@ function greet (name, owner) {
 }
 
 */
-
 
 /////////////////////////Area or Perimeter
 /*
@@ -381,7 +397,6 @@ function sumArray(array) {
 // console.log(sumArray([-6, -20, -1, -10, -12]), -28)
 // console.log(sumArray([-6, 20, -1, 10, -12]), 3)
 
-
 //////////////////////// Grasshopper - Grade book
 /*
 Grade book
@@ -408,7 +423,6 @@ function getGrade (s1, s2, s3) {
 
 /////////////////////////// Array plus array
 
-
 /*
 
 function arrayPlusArray(arr1, arr2) {
@@ -417,7 +431,6 @@ function arrayPlusArray(arr1, arr2) {
 
 console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]), 21)
 */
-
 
 ////////////////Total amount of points
 /*
@@ -462,9 +475,6 @@ console.log(points(["1:0","2:0","3:0","4:4","2:2","3:3","1:4","2:3","2:4","3:4"]
 
 */
 
-
-
-
 ////////////////////////////Find Maximum and Minimum Values of a List
 /*
 Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively.
@@ -489,8 +499,6 @@ var max = function(list){
   return Math.max(...list);
 }
 */
-
-
 
 //////////////////////////Convert a string to an array
 /*
