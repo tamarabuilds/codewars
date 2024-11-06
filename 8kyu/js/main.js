@@ -16,6 +16,15 @@ console.log("main.js loaded");
 //////////// try to split and walk item by item
 
 
+const isPalindrome = (x) => {
+  for (let i = 0; i <= x.length; i ++ ) {
+    console.log('i, x[i], x[-i]', i, x[i], x[-i])
+    if (x[i] !== x[-i]) return false
+  }
+  return true
+}
+
+
 
 
 /*
@@ -40,16 +49,17 @@ function isPalindrome(x) {
   }
   return true
 }
-
-console.log(isPalindrome("a"), true);
-console.log(isPalindrome("aba"), true);
-console.log(isPalindrome("abba"), true);
-console.log(isPalindrome("hello"), false);
-console.log(isPalindrome("Madam"), true);
-console.log(isPalindrome(""), true);
-console.log(isPalindrome("pappy"), false);
-console.log(isPalindrome("AbBa"), true);
 */
+
+// console.log(isPalindrome("a"), true);
+console.log(isPalindrome("aba"), true);
+// console.log(isPalindrome("abba"), true);
+// console.log(isPalindrome("hello"), false);
+// console.log(isPalindrome("Madam"), true);
+// console.log(isPalindrome(""), true);
+// console.log(isPalindrome("pappy"), false);
+// console.log(isPalindrome("AbBa"), true);
+
 
 
 //////////// Is it even?
