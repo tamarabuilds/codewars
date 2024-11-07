@@ -13,9 +13,18 @@ console.log("main.js loaded");
 ///////////// Is it a palindrome?
 
 ///////////// try to reverse and compare
+/*
+const isPalindrome = (x) => {
+  const forward = x.toLowerCase().split('')
+  const backward = x.toLowerCase().split('').reverse()
+  console.log(forward.join(), backward.join() )
+  return forward.join('') === backward.join('')
+}
+
+*/
+
 //////////// try to split and walk item by item
-
-
+/*
 const isPalindrome = (x) => {
   const arr = x.toLowerCase().split('')
   // console.log(arr)
@@ -27,7 +36,7 @@ const isPalindrome = (x) => {
   }
   return true
 }
-
+*/
 
 
 
@@ -55,6 +64,8 @@ function isPalindrome(x) {
 }
 */
 
+/*
+
 console.log(isPalindrome("a"), true);
 console.log(isPalindrome("aba"), true);
 console.log(isPalindrome("abba"), true);
@@ -63,7 +74,7 @@ console.log(isPalindrome("Madam"), true);
 console.log(isPalindrome(""), true);
 console.log(isPalindrome("pappy"), false);
 console.log(isPalindrome("AbBa"), true);
-
+*/
 
 
 //////////// Is it even?
