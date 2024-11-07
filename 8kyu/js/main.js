@@ -17,9 +17,13 @@ console.log("main.js loaded");
 
 
 const isPalindrome = (x) => {
+  const arr = x.toLowerCase().split('')
+  // console.log(arr)
   for (let i = 0; i <= x.length; i ++ ) {
-    console.log('i, x[i], x[-i]', i, x[i], x[-i])
-    if (x[i] !== x[-i]) return false
+    // console.log('i, arr[i], arr[arr.length - i]', i, arr[i], arr[arr.length - 1 - i])
+    // console.log('i, x[i], x[-i]', i, x[i], x[-i])
+    if (arr[i] !== arr[arr.length - 1- i]) return false
+    // if (x[i] !== x[-i]) return false
   }
   return true
 }
@@ -51,14 +55,14 @@ function isPalindrome(x) {
 }
 */
 
-// console.log(isPalindrome("a"), true);
+console.log(isPalindrome("a"), true);
 console.log(isPalindrome("aba"), true);
-// console.log(isPalindrome("abba"), true);
-// console.log(isPalindrome("hello"), false);
-// console.log(isPalindrome("Madam"), true);
-// console.log(isPalindrome(""), true);
-// console.log(isPalindrome("pappy"), false);
-// console.log(isPalindrome("AbBa"), true);
+console.log(isPalindrome("abba"), true);
+console.log(isPalindrome("hello"), false);
+console.log(isPalindrome("Madam"), true);
+console.log(isPalindrome(""), true);
+console.log(isPalindrome("pappy"), false);
+console.log(isPalindrome("AbBa"), true);
 
 
 
