@@ -10,6 +10,41 @@ console.log("main.js loaded");
 
 ///////////////
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////Powers of 2
+/*
+function powersOfTwo(n){
+  let answer = [1]
+  for (let i = 1; i <= n; i++){
+    answer.push(Math.pow(2, i))
+  }
+  return answer
+  // console.log(Array.from({length: n + 1},(e, i) => i))
+  // return Array.from({length: n + 1}, (e, i) => 2 ** i)
+}
+
+console.log(powersOfTwo(0), [1])
+console.log(powersOfTwo(1), [1, 2])
+console.log(powersOfTwo(4), [1, 2, 4, 8, 16])
+
+*/
+
 ///////////// Is it a palindrome?
 
 ///////////// try to reverse and compare
