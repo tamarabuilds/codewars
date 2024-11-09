@@ -24,6 +24,46 @@ console.log("main.js loaded");
 
 
 
+/////////////////////// altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+
+// String.prototype.toAlternatingCase = function () {
+//   // Define your method here :)
+//   return
+// }
+
+// const toAlternatingCase = (str) => {
+//   let answer = [];
+//   let arr = str.split('');
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].toLowerCase() === arr[i]) {
+//       answer.push(arr[i].toUpperCase())
+//     }
+//      else {
+//       answer.push(arr[i].toLowerCase())
+//     }
+//   }
+//   return answer.join('')
+// }
+/*
+String.prototype.toAlternatingCase = function () {
+  // Define your method here :)
+  // let arr = this.split('')
+  //   let answer = [];
+  // // let arr = str.split('');
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (arr[i].toLowerCase() === arr[i]) {
+  //     answer.push(arr[i].toUpperCase())
+  //   }
+  //    else {
+  //     answer.push(arr[i].toLowerCase())
+  //   }
+  // }
+  // return answer.join('')
+  return this.split('').map( (char) => char === char.toLowerCase() ? char.toUpperCase() : char.toLowerCase()).join('')
+
+}
+*/
+// console.log(toAlternatingCase('hello WORLD'), 'HELLO world')
 
 
 
