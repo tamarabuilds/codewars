@@ -10,8 +10,6 @@ console.log("main.js loaded");
 
 ///////////////
 
-
-
 /////////////// Welcome!
 /*
 
@@ -21,11 +19,28 @@ console.log("main.js loaded");
 
 */
 
+/////////////// I love you, a little , a lot, passionately ... not at all
+/*
 
+const response = {
+  1: "I love you",
+  2: "a little",
+  3: "a lot",
+  4: "passionately",
+  5: "madly",
+  6: "not at all",
+};
 
+function howMuchILoveYou(nbPetals) {
+  // your code
+  const input = nbPetals % 6 || 6
+  return response[input]
+}
 
-
-
+console.log(howMuchILoveYou(7), "I love you");
+console.log(howMuchILoveYou(3), "a lot");
+console.log(howMuchILoveYou(6), "not at all");
+*/
 
 /////////////// Welcome!
 /*
@@ -62,11 +77,6 @@ console.log(greet('kejfr'), 'Welcome');
 
 */
 
-
-
-
-
-
 /////////////////////// Sum The Strings
 /*
 function sumStr(a,b) {
@@ -88,9 +98,6 @@ function between(a, b) {
 console.log(between(1, 4), [1,2,3,4])
 console.log(between(-2, 2), [-2,-1,0,1, 2])
 */
-
-
-
 
 /////////////////////// altERnaTIng cAsE <=> ALTerNAtiNG CaSe
 
@@ -132,8 +139,6 @@ String.prototype.toAlternatingCase = function () {
 }
 */
 // console.log(toAlternatingCase('hello WORLD'), 'HELLO world')
-
-
 
 ////////////////Powers of 2
 /*
@@ -181,8 +186,6 @@ const isPalindrome = (x) => {
 }
 */
 
-
-
 /*
 function isPalindrome(x) {
   // your code here
@@ -218,7 +221,6 @@ console.log(isPalindrome(""), true);
 console.log(isPalindrome("pappy"), false);
 console.log(isPalindrome("AbBa"), true);
 */
-
 
 //////////// Is it even?
 /*
