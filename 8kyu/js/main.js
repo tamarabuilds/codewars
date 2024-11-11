@@ -12,12 +12,28 @@ console.log("main.js loaded");
 
 /////////////// Welcome!
 /*
-
 */
-/////////////// Welcome!
+/////////////// Grasshopper - Messi goals function
+
 /*
 
 */
+
+
+
+/////////////// Grasshopper - Messi goals function
+
+/*
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  // code goes here
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+*/
+
+
+
+
 
 /////////////// I love you, a little , a lot, passionately ... not at all
 /*
