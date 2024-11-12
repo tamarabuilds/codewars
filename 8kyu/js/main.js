@@ -21,6 +21,18 @@ console.log("main.js loaded");
 
 
 
+
+/////////////// Grasshopper - Debug sayHello
+
+/*
+
+function sayHello(name) {
+  return 'Hello, ' + name
+}
+*/
+
+
+
 /////////////// Grasshopper - Messi goals function
 
 /*
