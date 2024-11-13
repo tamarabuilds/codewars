@@ -12,15 +12,28 @@ console.log("main.js loaded");
 
 /////////////// Welcome!
 /*
-*/
+ */
 /////////////// Grasshopper - Messi goals function
 
 /*
 
 */
 
+/////////////// Difference of Volumes of Cuboids
+/*
 
+function findDifference(a, b) {
+  //loading...
+  // return Math.abs((a[0] * a[1] * a[2]) - (b[0] * b[1] * b[2]))
+  return Math.abs( a.reduce((acc, c) => acc * c, 1) - b.reduce((acc, c) => acc * c), 1)
+}
 
+console.log(findDifference([3, 2, 5], [1, 4, 4]), 14);
+console.log(findDifference([9, 7, 2], [5, 2, 2]), 106);
+console.log(findDifference([11, 2, 5], [1, 10, 8]), 30);
+console.log(findDifference([4, 4, 7], [3, 9, 3]), 31);
+console.log(findDifference([15, 20, 25], [10, 30, 25]), 0);
+*/
 
 /////////////// Grasshopper - Debug sayHello
 
@@ -31,8 +44,6 @@ function sayHello(name) {
 }
 */
 
-
-
 /////////////// Grasshopper - Messi goals function
 
 /*
@@ -42,10 +53,6 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals
 }
 */
-
-
-
-
 
 /////////////// I love you, a little , a lot, passionately ... not at all
 /*
