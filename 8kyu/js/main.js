@@ -52,9 +52,29 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
-/////////////// Welcome!
+/////////////// Expressions Matter
 /*
- */
+function expressionMatter(a, b, c) {
+  const eq1 = a * b * c
+  const eq2 = (a + b) * c
+  const eq3 = a * (b + c)
+  const eq4 = a + b * c
+  const eq5 = a * b + c
+  const eq6 = a + b + c
+  
+  return Math.max(eq1, eq2, eq3, eq4, eq5, eq6)
+}
+
+console.log(expressionMatter(2, 1, 2), 6)
+console.log(expressionMatter(2, 1, 1), 4)
+console.log(expressionMatter(1, 1, 1), 3)
+console.log(expressionMatter(5, 1, 3), 20)
+console.log(expressionMatter(3, 5, 7), 105)
+console.log(expressionMatter(2, 10, 3), 60)
+console.log(expressionMatter(1, 8, 3), 27)
+*/
+
+
 /////////////// Function 2 - squaring an argument
 
 /*
