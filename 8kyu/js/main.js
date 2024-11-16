@@ -49,9 +49,24 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
-/////////////// Welcome!
+/////////////// Find Multiples of a Number
+
 /*
- */
+function findMultiples(integer, limit) {
+  //your code here
+  let answer = [integer]
+  for (let i = 2; i*integer <= limit; i++){
+    answer.push(i * integer)
+  }
+  return answer
+}
+
+console.log(findMultiples(5, 25), [5, 10, 15, 20, 25])
+*/
+
+
+
+
 /////////////// Expressions Matter
 /*
 function expressionMatter(a, b, c) {
