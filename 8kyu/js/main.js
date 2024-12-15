@@ -12,10 +12,55 @@ console.log("main.js loaded");
 
 
 
+/////////////// Welcome!
+/*
+
+*/
+/////////////// Welcome!
+/*
+
+*/
 
 
 
 
+
+
+
+/////////////// Welcome!
+/*
+
+const translations = {
+  "english": "Welcome",
+  "czech": "Vitejte",
+  "danish": "Velkomst",
+  "dutch": "Welkom",
+  "estonian": "Tere tulemast",
+  "finnish": "Tervetuloa",
+  "flemish": "Welgekomen",
+  "french": "Bienvenue",
+  "german": "Willkommen",
+  "irish": "Failte",
+  "italian": "Benvenuto",
+  "latvian": "Gaidits",
+  "lithuanian": "Laukiamas",
+  "polish": "Witamy",
+  "spanish": "Bienvenido",
+  "swedish": "Valkommen",
+  "welsh": "Croeso"
+}
+
+
+function greet(language){
+  const input = language.toLowerCase()
+  return translations[input] ?? 'Welcome';
+}
+
+console.log(greet('english'), 'Welcome');
+console.log(greet('dutch'), 'Welkom');
+console.log(greet('kejfr'), 'Welcome');
+
+*/
 
 
 
