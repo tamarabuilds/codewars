@@ -31,6 +31,87 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
+/////////////// Welcome!
+/*
+ */
+/////////////// Welcome!
+/*
+ */
+/////////////// Welcome!
+/*
+ */
+/////////////// Welcome!
+/*
+ */
+/////////////// Welcome!
+/*
+ */
+/////////////// Welcome!
+/*
+ */
+/////////////// Welcome!
+/*
+ */
+/////////////// Welcome!
+/*
+ */
+/////////////// Welcome!
+/*
+ */
+
+
+
+
+
+/////////////// Is the string uppercase?
+/*
+// String.prototype.isUpperCase = function() {
+  //   // your code here
+  //   const newS = this.replaceAll(' ', '')
+  //   const arr = newS.split('')
+  //   console.log(arr)
+  //   for ( let i = 0; i < newS.length; i++ ) {
+    //     // console.log(arr[i])
+    //     if (arr[i].toLowerCase() === arr[i]) {
+      //       return false
+      //     } 
+      //   }
+      
+      //   return true
+      
+      //     }
+      
+      const isAlpha = (c) => {
+        const char = c.toLowerCase()
+        const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+        return alphabet.indexOf(char) > 0
+      }
+      
+      
+      const isUpperCase = (s) => {
+        const arr = s.split('')
+        // console.log(arr)
+        for ( let i = 0; i < s.length; i++ ) {
+          // console.log(arr[i])
+          // console.log( isAlpha(arr[i]))
+          if (isAlpha(arr[i]) && arr[i].toLowerCase() === arr[i]) {
+            return false
+          } 
+        }
+        
+        return true
+      }
+      
+      // console.log(isUpperCase('c'), false)
+      // console.log(isUpperCase('H'), true)
+      // console.log(isUpperCase('Hh'), false)
+      // console.log(isUpperCase('HH'), true)
+      // console.log(isUpperCase(''), true)
+      // console.log(isUpperCase('HELLO I AM DONALD'), true)
+      console.log(isUpperCase('HELLO I AM DONALD. and you are?'), false)
+      // console.log(isUpperCase('HELLO I aM DONALD'), true)
+      
+*/
 
 /////////////// Training JS #7: if..else and ternary operator
 
