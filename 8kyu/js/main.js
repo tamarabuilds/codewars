@@ -55,11 +55,14 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
-/////////////// Welcome!
+/////////////// Function 2 - squaring an argument
+
 /*
- */
 
-
+function square(x) {
+  return x * x;
+}
+*/
 
 
 
