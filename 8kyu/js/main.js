@@ -46,9 +46,41 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
-/////////////// Welcome!
+/////////////// Filter out the geese
 /*
  */
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  let result = birds
+
+  for (let i = 0 ; i < birds.length; i++) {
+    console.log('result before', result)
+    console.log('result[i]', result[i])
+    while (geese.includes(result[i])){
+      result.splice(i, 1)
+      console.log('result after', result)
+    }
+  }
+  // geese.forEach((e) => {
+  //   console.log('result before', result)
+  //   console.log('e', e)
+  //   console.log(birds.indexOf(e) > -1)
+  //   if (birds.indexOf(e) > -1) {
+
+  //     result.splice(birds.indexOf(e), 1)
+  //     console.log('result after', result)
+  //   }
+    
+  // })
+  // return an array containing all of the strings in the input array except those that match strings in geese
+  return result
+};
+
+console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]),["Mallard", "Hook Bill", "Crested", "Blue Swedish"])
+// console.log(gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]),["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
+// console.log(gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]),[])
+
+
 /////////////// Find Multiples of a Number
 
 /*
