@@ -43,13 +43,31 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
 /*
- */
+function replace(s){
+  //coding and coding....
+  const vowels = ['a', 'e', 'i', 'o', 'u']
+  
+  return s.split('').map(char => {
+    if (vowels.indexOf(char.toLowerCase()) > -1) {
+      return '!'
+    }
+    return char
+  } ).join('')
+  
+}
+
+console.log(replace("Hi!") , "H!!")
+console.log(replace("!Hi! Hi!") , "!H!! H!!")
+console.log(replace("aeiou") , "!!!!!")
+console.log(replace("ABCDE") , "!BCD!")
+*/
+
+
 /////////////// Add Length
 
 /*
- */
 function addLength(str) {
   //start-here
   const arr = str.split(' ')
@@ -59,10 +77,11 @@ function addLength(str) {
     answer.push(`${element} ${len}`)
   });
   return answer
-  }
-  
+}
+
 console.log(addLength("apple ban"), ["apple 5", "ban 3"])
 console.log(addLength("you will win"), ["you 3", "will 4", "win 3"])
+*/
 
 
 /////////////// The Wide-Mouthed frog!
