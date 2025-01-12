@@ -46,9 +46,25 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Add Length
+
 /*
  */
+function addLength(str) {
+  //start-here
+  const arr = str.split(' ')
+  let answer = []
+  arr.forEach(element => {
+    const len = element.length
+    answer.push(`${element} ${len}`)
+  });
+  return answer
+  }
+  
+console.log(addLength("apple ban"), ["apple 5", "ban 3"])
+console.log(addLength("you will win"), ["you 3", "will 4", "win 3"])
+
+
 /////////////// The Wide-Mouthed frog!
 
 /*
