@@ -64,9 +64,20 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Exclamation marks series #1: Remove an exclamation mark from the end of string
 /*
- */
+function remove (string) {
+  //coding and coding....
+  // if (string[string.length - 1] !== '!') return string
+  // const answer = string.split('').slice(0, string.length - 1).join('')
+  // return answer;
+  
+  return string.endsWith('!') ? string.slice(0, -1) : string
+}
+console.log(remove('Hi!'), 'Hi')
+*/
+
+
 /////////////// Find the position!
 /*
 const alphabet = 'abcdefghijklmnopqrstuvwxyz'
