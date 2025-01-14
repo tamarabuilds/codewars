@@ -74,9 +74,17 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Drink about
 /*
- */
+function peopleWithAgeDrink(old) {
+  if (old < 14) return 'drink toddy'
+  if (old < 18) return 'drink coke'
+  if (old < 21) return 'drink beer'
+  return 'drink whisky'
+};
+*/
+
+
 /////////////// Exclusive "or" (xor) Logical Operator
 /*
 function xor(a, b) {
