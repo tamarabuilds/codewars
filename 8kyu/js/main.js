@@ -77,9 +77,20 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Exclusive "or" (xor) Logical Operator
 /*
- */
+function xor(a, b) {
+  // TODO: Program Me
+  return (a || b) && (a !== b)
+}
+
+console.log(xor(false, false), false)
+console.log(xor(true, false), true)
+console.log(xor(false, true), true)
+console.log(xor(true, true), false)
+console.log(xor(true, true), false)
+*/
+
 /////////////// Grasshopper - Terminal game combat function
 /*
 function combat(health, damage) {
