@@ -37,9 +37,18 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
-/////////////// Welcome!
+/////////////// 5 without numbers !!
 /*
- */
+
+function unusualFive() {
+  const arr = ['a', 'a', 'a', 'a', 'a']
+  return arr.length;
+}
+
+console.log(unusualFive(), 5)
+*/
+
+
 /////////////// Super Duper Easy
 /*
 function problem(x){
