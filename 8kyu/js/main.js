@@ -43,16 +43,21 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
-/////////////// Welcome!
+/////////////// Reverse List Order
 /*
- */
+
+function reverseList(list) {
+  return list.reverse()
+}
+
+console.log(reverseList([1,2,3,4]), [4,3,2,1]);
+*/
 /////////////// Filter out the geese
 /*
- */
 function gooseFilter (birds) {
   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
   let result = birds
-
+  
   for (let i = 0 ; i < birds.length; i++) {
     console.log('result before', result)
     console.log('result[i]', result[i])
@@ -62,24 +67,24 @@ function gooseFilter (birds) {
     }
   }
   // geese.forEach((e) => {
-  //   console.log('result before', result)
-  //   console.log('e', e)
-  //   console.log(birds.indexOf(e) > -1)
-  //   if (birds.indexOf(e) > -1) {
-
-  //     result.splice(birds.indexOf(e), 1)
-  //     console.log('result after', result)
-  //   }
+    //   console.log('result before', result)
+    //   console.log('e', e)
+    //   console.log(birds.indexOf(e) > -1)
+    //   if (birds.indexOf(e) > -1) {
+      
+    //     result.splice(birds.indexOf(e), 1)
+    //     console.log('result after', result)
+    //   }
     
-  // })
-  // return an array containing all of the strings in the input array except those that match strings in geese
-  return result
-};
-
-console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]),["Mallard", "Hook Bill", "Crested", "Blue Swedish"])
-// console.log(gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]),["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
-// console.log(gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]),[])
-
+    // })
+    // return an array containing all of the strings in the input array except those that match strings in geese
+    return result
+  };
+  
+  console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]),["Mallard", "Hook Bill", "Crested", "Blue Swedish"])
+  // console.log(gooseFilter(["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"]),["Mallard", "Barbary", "Hook Bill", "Blue Swedish", "Crested"])
+  // console.log(gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]),[])
+  */
 
 /////////////// Find Multiples of a Number
 
@@ -95,9 +100,6 @@ function findMultiples(integer, limit) {
 
 console.log(findMultiples(5, 25), [5, 10, 15, 20, 25])
 */
-
-
-
 
 /////////////// Expressions Matter
 /*
@@ -121,7 +123,6 @@ console.log(expressionMatter(2, 10, 3), 60)
 console.log(expressionMatter(1, 8, 3), 27)
 */
 
-
 /////////////// Function 2 - squaring an argument
 
 /*
@@ -130,8 +131,6 @@ function square(x) {
   return x * x;
 }
 */
-
-
 
 /////////////// Is the string uppercase?
 /*
