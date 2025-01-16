@@ -10,7 +10,6 @@ console.log("main.js loaded");
 
 ///////////////
 
-
 /////////////// Welcome
 /*
  */
@@ -81,9 +80,18 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Grasshopper - Terminal game combat function
 /*
- */
+function combat(health, damage) {
+  // Write your code here
+  return Math.max( health - damage, 0)
+}
+
+console.log(combat(100, 5), 95)
+console.log(combat(92, 8), 84)
+console.log(combat(20, 30), 0)
+*/
+
 /////////////// Name Shuffler
 /*
 function nameShuffler(str){
@@ -138,8 +146,6 @@ function pipeFix(numbers){
   console.log(pipeFix([1,2,3,12]),[1,2,3,4,5,6,7,8,9,10,11,12])
   */
 
-
-
 /////////////// Well of Ideas - Easy Version
 
 /*
@@ -155,7 +161,6 @@ console.log(well(['good', 'bad', 'bad', 'bad', 'bad']), 'Publish!')
 console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']), 'I smell a series!')
 */
 
-
 /////////////// 5 without numbers !!
 /*
 
@@ -166,7 +171,6 @@ function unusualFive() {
 
 console.log(unusualFive(), 5)
 */
-
 
 /////////////// Super Duper Easy
 /*
