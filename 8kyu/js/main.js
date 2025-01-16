@@ -40,9 +40,18 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
-/////////////// Welcome!
+/////////////// Super Duper Easy
 /*
- */
+function problem(x){
+  //your code here
+  if (typeof x !== 'number') return 'Error'
+  return (x * 50) + 6
+}
+
+console.log(problem('hello'), "Error")
+console.log(problem(1), 56)
+*/
+
 /////////////// Reverse List Order
 /*
 
