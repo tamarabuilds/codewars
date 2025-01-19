@@ -31,9 +31,29 @@ console.log("main.js loaded");
 /////////////// Welcome!
 /*
  */
-/////////////// Welcome!
+/////////////// Lario and Muigi Pipe Problem
+
 /*
- */
+function pipeFix(numbers){
+  const max = Math.max(...numbers)
+  const min = Math.min(...numbers)
+  const diff = max-min
+  // let arr = [min]
+  // for (let i = min + 1; i <= max; i++) {
+    //   arr.push(i)
+    // }
+    // return arr
+    return Array.from({ length: diff + 1}, (e, i) => i + min)
+  }
+  
+  console.log(pipeFix([1,2,3,12]),[1,2,3,4,5,6,7,8,9,10,11,12])
+  console.log(pipeFix([6,9]),[6,7,8,9])
+  console.log(pipeFix([1,2,3,12]),[1,2,3,4,5,6,7,8,9,10,11,12])
+  console.log(pipeFix([1,2,3,12]),[1,2,3,4,5,6,7,8,9,10,11,12])
+  */
+
+
+
 /////////////// Well of Ideas - Easy Version
 
 /*
