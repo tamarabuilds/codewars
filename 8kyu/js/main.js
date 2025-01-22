@@ -67,9 +67,18 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Find the position!
 /*
- */
+const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+function position(letter){
+  //Write your own Code!
+  const position = alphabet.indexOf(letter) + 1
+  return `Position of alphabet: ${position}`
+}
+*/
+
+
 
 /////////////// get character from ASCII Value
 /*
