@@ -71,9 +71,22 @@ console.log("main.js loaded");
 /*
  */
 
-/////////////// Welcome
+/////////////// get character from ASCII Value
 /*
- */
+function getChar(c){
+  // ...
+  // return c.toString(2)
+  return String.fromCharCode(c)
+}
+
+console.log(getChar(55), '7')
+console.log(getChar(56), '8')
+console.log(getChar(57), '9')
+console.log(getChar(58), ':')
+console.log(getChar(65), 'A')
+*/
+
+
 /////////////// Drink about
 /*
 function peopleWithAgeDrink(old) {
