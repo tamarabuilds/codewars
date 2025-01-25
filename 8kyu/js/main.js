@@ -61,9 +61,26 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// No zeros for heros
+
 /*
- */
+function noBoringZeros(n) {
+  // your code
+  let num = n.toString()
+  // if (num.endsWith('0')){
+    while (num.endsWith('0')){
+      // console.log(num)
+      num = num.slice(0, -1)
+    }
+    return +num
+  }
+  
+  console.log(noBoringZeros(1450), 145)
+  console.log(noBoringZeros(960000), 96)
+  console.log(noBoringZeros(1050), 105)
+  */
+
+
 /////////////// Exclamation marks series #1: Remove an exclamation mark from the end of string
 /*
 function remove (string) {
