@@ -58,9 +58,13 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Reversing Words in a String
 /*
- */
+
+function reverse(string){
+  return string.split(' ').reverse().join(' ');
+}
+*/
 /////////////// No zeros for heros
 
 /*
