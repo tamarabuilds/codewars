@@ -52,9 +52,23 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// A wolf in sheep's clothing
 /*
- */
+function warnTheSheep(queue) {
+  if (queue[queue.length - 1] === 'wolf') return "Pls go away and stop eating my sheep"
+  const wolfLocation = queue.indexOf('wolf')
+  const numberSheepToWarn = (queue.length - 1) - wolfLocation
+  return `Oi! Sheep number ${numberSheepToWarn}! You are about to be eaten by a wolf!`
+}
+
+console.log(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]),
+"Oi! Sheep number 2! You are about to be eaten by a wolf!")
+console.log(warnTheSheep(["sheep", "wolf", "sheep", "sheep", "sheep", "sheep", "sheep"]),
+"Oi! Sheep number 5! You are about to be eaten by a wolf!")
+console.log(warnTheSheep(["sheep", "sheep", "wolf"]),
+"Pls go away and stop eating my sheep")
+*/
+
 /////////////// Merge two sorted arrays into one
 /*
 
