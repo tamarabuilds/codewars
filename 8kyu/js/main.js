@@ -49,9 +49,17 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// The Wide-Mouthed frog!
+
 /*
- */
+function mouthSize(animal) {
+  // code here
+  if (animal.toLowerCase() === 'alligator') return 'small'
+  return 'wide'
+}
+*/
+
+
 /////////////// A wolf in sheep's clothing
 /*
 function warnTheSheep(queue) {
