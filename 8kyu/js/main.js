@@ -34,9 +34,14 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Plural
 /*
- */
+function plural(n) {
+  // ...
+  if (n === 1) return false
+  return true
+}
+*/
 /////////////// Bin to Decimal
 
 /*
