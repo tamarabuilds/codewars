@@ -40,9 +40,15 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Grasshopper - Basic Function Fixer
+
 /*
- */
+function addFive(num) {
+  var total = num + 5
+  return total
+}
+*/
+
 /////////////// Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
 /*
 function replace(s){
