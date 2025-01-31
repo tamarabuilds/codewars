@@ -37,9 +37,16 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Bin to Decimal
+
 /*
- */
+function binToDec(bin) {
+  // TODO
+  return parseInt(bin, 2)
+}
+*/
+
+
 /////////////// Grasshopper - Basic Function Fixer
 
 /*
