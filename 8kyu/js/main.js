@@ -31,9 +31,24 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Remove duplicates from list
+
 /*
- */
+function distinct(a) {
+  // return a.filter((e, i) => a.indexOf(e) === i - 1 ? null : e);
+  
+  let answer = [];
+  for (i = 0; i < a.length; i++) {
+    answer.includes(a[i]) ? null:  answer.push(a[i])
+  }
+  return answer
+}
+
+console.log(distinct([1,2]), [1,2])
+console.log(distinct([1,1,2]), [1,2])
+console.log(distinct([ 1, 1, 2, 3, 4, 5 ]), [ 1, 2, 3, 4, 5 ])
+*/
+
 /////////////// Plural
 /*
 function plural(n) {
