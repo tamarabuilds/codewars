@@ -28,26 +28,38 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Hex to Decimal
+
 /*
- */
+function hexToDec(hexString){
+  //your code here
+  // return hexString.toString(10)
+  return parseInt(hexString, 16)
+}
+
+console.log(hexToDec("1"), 1)
+console.log(hexToDec("a"), 10)
+console.log(hexToDec("10"), 16)
+*/
+
+
 /////////////// Remove duplicates from list
 
 /*
 function distinct(a) {
   // return a.filter((e, i) => a.indexOf(e) === i - 1 ? null : e);
-  
-  let answer = [];
-  for (i = 0; i < a.length; i++) {
-    answer.includes(a[i]) ? null:  answer.push(a[i])
+  return [...new Set(a)]
+  // let answer = [];
+  // for (i = 0; i < a.length; i++) {
+    //   answer.includes(a[i]) ? null:  answer.push(a[i])
+    // }
+    // return answer
   }
-  return answer
-}
-
-console.log(distinct([1,2]), [1,2])
-console.log(distinct([1,1,2]), [1,2])
-console.log(distinct([ 1, 1, 2, 3, 4, 5 ]), [ 1, 2, 3, 4, 5 ])
-*/
+  
+  console.log(distinct([1,2]), [1,2])
+  console.log(distinct([1,1,2]), [1,2])
+  console.log(distinct([ 1, 1, 2, 3, 4, 5 ]), [ 1, 2, 3, 4, 5 ])
+  */
 
 /////////////// Plural
 /*
