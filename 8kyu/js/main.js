@@ -25,9 +25,22 @@ console.log("main.js loaded");
 /////////////// Welcome
 /*
  */
-/////////////// Welcome
+/////////////// Hello, Name or World!
 /*
- */
+
+function hello(name) {
+  if (!name) return `Hello, World!`
+  
+  let answer = name.toLowerCase().split('')
+  answer[0] = name[0].toUpperCase()
+  
+  return `Hello, ${answer.join('')}!`
+}
+
+console.log(hello('john'), 'Hello, John')
+console.log(hello('alice'), 'Hello, Alice')
+console.log(hello(), 'Hello, World')
+*/
 /////////////// Hex to Decimal
 
 /*
